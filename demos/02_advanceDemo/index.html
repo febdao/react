@@ -48,5 +48,35 @@
 
   </script>
 
+
+  <div id="stateDemo" class="board"></div>
+
+  <script type="text/babel">
+    var CheckBox = React.createClass({
+
+      getInitialState: function() {
+        return {checked: true}
+      },
+
+      handleChecked: function() {
+        this.setState({checked: !this.state.checked})
+      },
+
+      render: function() {
+        var msg = 'uncheck';
+        if(this.state.checked){
+          msg='checked'
+        }
+        return (
+          <div className="board__item">
+            <input type="checkbox" onChange={this.handleChecked} defaultChecked={this.state.checked} />
+            <span>Checkbox is {msg}</span>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(<CheckBox />, document.getElementById('stateDemo'));
+  </script>
   </body>
 </html>
