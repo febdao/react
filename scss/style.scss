@@ -4,7 +4,8 @@
 $gray: #ece1ce;
 $yellow: #ebc372;
 $blue: #64b6db;
-$green: #3a437d;
+$green_dark: #3a437d;
+$green: #00c78c;
 $red: #be322c;
 $dark: #54565b;
 // Elements
@@ -26,7 +27,7 @@ textarea {
     background: $gray;
     display: inline-block;
     padding: 10px 20px;
-    margin: 20px;
+    margin: 10px;
   }
 
 }
@@ -45,7 +46,7 @@ textarea {
   }
 
   &--primary {
-    background: $green;
+    background: $green_dark;
   }
 
   &--danger {
@@ -53,6 +54,6 @@ textarea {
   }
 
   &--success {
-    background: $blue;
+    background: $green;
   }
 }
