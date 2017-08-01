@@ -1,2 +1,27 @@
 body {
-  background: gray; }
+  font-size: 18px; }
+
+.board {
+  background: #64b6db;
+  padding: 10px 20px;
+  margin-bottom: 50px; }
+  .board__item {
+    background: #ece1ce;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px; }
+
+.button {
+  border: none;
+  border-radius: 0;
+  padding: 5px 10px;
+  margin-right: 2px;
+  color: white;
+  outline: none;
+  cursor: pointer; }
+  .button:hover {
+    opacity: .7; }
+  .button--primary {
+    background: #3a437d; }
+  .button--danger {
+    background: #be322c; }

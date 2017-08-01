@@ -12,5 +12,41 @@
   </head>
   <body>
 
+  <div id="propsDemo" class="board"></div>
+
+  <script type="text/babel">
+
+    var Comment = React.createClass({
+      edit: function() {
+        alert("Editing comment");
+      },
+
+      remove: function() {
+        alert("Removing comment");
+      },
+
+      render: function() {
+        return (
+          <div className="comment__container board__item">
+            <div className="comment__text">{this.props.children}</div>
+            <button onClick={this.edit} className="button button--primary">Edit</button>
+            <button onClick={this.remove} className="button button--danger">Remove</button>
+          </div>
+        )
+      }
+    })
+
+    ReactDOM.render(
+      <div className="comment">
+        <Comment>Hey my name is Feb</Comment>
+        <Comment>Hey my name is Luna</Comment>
+        <Comment>Hey my name is Rom</Comment>
+        <Comment>Hey my name is Thoc</Comment>
+      </div>
+      , document.getElementById('propsDemo')
+    );
+
+  </script>
+
   </body>
 </html>

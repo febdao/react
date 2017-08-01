@@ -1,3 +1,49 @@
+// Variables
+
+// Color
+$gray: #ece1ce;
+$yellow: #ebc372;
+$blue: #64b6db;
+$green: #3a437d;
+$red: #be322c;
+$dark: #54565b;
+
 body {
-  background: gray;
+  font-size: 18px;
+}
+
+.board {
+  background: $blue;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+
+  &__item {
+    background: $gray;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+  }
+
+}
+
+.button {
+  border: none;
+  border-radius: 0;
+  padding: 5px 10px;
+  margin-right: 2px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &--primary {
+    background: $green;
+  }
+
+  &--danger {
+    background: $red;
+  }
 }
