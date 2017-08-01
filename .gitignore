@@ -1,0 +1,8 @@
+# Logs
+logs
+*.log
+
+# Ignore sass cache
+.npm/.sass-cache/
+.npm/node_modules
+.npm/bower_components/

@@ -1,0 +1,12 @@
+{
+  "name": "react-demo",
+  "version": "1.0.0",
+  "main": "Gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "license": "ISC"
+}
