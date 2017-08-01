@@ -7,11 +7,16 @@ $blue: #64b6db;
 $green: #3a437d;
 $red: #be322c;
 $dark: #54565b;
-
+// Elements
 body {
   font-size: 18px;
 }
 
+textarea {
+  display: block;
+}
+
+// Custom
 .board {
   background: $blue;
   padding: 10px 20px;
@@ -45,5 +50,9 @@ body {
 
   &--danger {
     background: $red;
+  }
+
+  &--success {
+    background: $blue;
   }
 }
