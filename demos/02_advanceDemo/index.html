@@ -35,6 +35,10 @@
         this.setState({editing: false});
       },
 
+      cancel: function() {
+        this.setState({editing: false});
+      },
+
       renderNormal: function() {
         return (
           <div className="comment__container board__item">
@@ -50,6 +54,7 @@
           <div className="comment__container board__item">
             <textarea ref="newText" defaultValue={this.props.children}></textarea>
             <button onClick={this.save} className="button button--success">Save</button>
+            <button onClick={this.cancel} className="button button--danger">Cancel</button>
           </div>
         );
       },
