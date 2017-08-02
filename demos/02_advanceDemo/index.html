@@ -81,6 +81,12 @@
         }
       },
 
+      add: function(text) {
+        var arr = this.state.comments;
+        arr.push(text);
+        this.setState({comments: arr});
+      },
+
       removeComment: function(i) {
         console.log('Removing comment: ' + i);
         var arr = this.state.comments;
@@ -105,10 +111,13 @@
 
       render: function() {
         return (
-          <div className="comment">
-            {
-              this.state.comments.map(this.eachComment)
-            }
+          <div>
+            <button onClick={this.add.bind(null, 'This is new button')} className="button button--info">Add new</button>
+            <div className="comment">
+              {
+                this.state.comments.map(this.eachComment)
+              }
+            </div>
           </div>
         )
       },
