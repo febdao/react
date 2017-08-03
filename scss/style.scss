@@ -1,13 +1,16 @@
 // Variables
 
 // Color
-$gray: #ece1ce;
-$yellow: #ebc372;
+$white: #fff;
+$black: #000;
 $blue: #64b6db;
-$green_dark: #3a437d;
+$dark: #54565b;
+$gray: #ece1ce;
+$green-dark: #3a437d;
 $green: #00c78c;
 $red: #be322c;
-$dark: #54565b;
+$yellow: #ebc372;
+
 // Elements
 body {
   font-size: 18px;
@@ -20,33 +23,33 @@ textarea {
 // Custom
 .board {
   background: $blue;
-  padding: 10px 20px;
   margin-bottom: 50px;
+  padding: 10px 20px;
 
   &__item {
     background: $gray;
     display: inline-block;
-    padding: 10px 20px;
     margin: 10px;
+    padding: 10px 20px;
   }
 
 }
 
 .button {
-  border: none;
-  border-radius: 0;
-  padding: 5px 10px;
-  margin-right: 2px;
-  color: white;
-  outline: none;
+  border: 0;
+  border-radius: none;
+  color: $white;
   cursor: pointer;
+  margin-right: 2px;
+  outline: none;
+  padding: 5px 10px;
 
   &:hover {
     opacity: .7;
   }
 
   &--primary {
-    background: $green_dark;
+    background: $green-dark;
   }
 
   &--danger {
